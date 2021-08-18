@@ -2,11 +2,13 @@ html {
   font-size: $font-size;
 }
 body {
-  font-size: $font-size;
-  font-family: $font-main;
-  min-height: 101vh;
-  max-width: 100%;
   overflow-x: hidden;
+
+  max-width: 100%;
+  min-height: 101vh;
+
+  font-family: $font-main;
+  font-size: $font-size;
 }
 
 a {
@@ -14,6 +16,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
+
     color: $color-accent;
   }
 }

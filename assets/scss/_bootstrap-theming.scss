@@ -1,6 +1,8 @@
 .navbar-inverse {
-  background-color: darken($color-dark, 4%);
+  margin-bottom: 0;
+
   border-color: transparent;
+  background-color: darken($color-dark, 4%);
 
   .navbar-nav {
     > .active > a {
@@ -14,6 +16,7 @@
 
     > li > a {
       transition: background-color 0.5s;
+
       @include sm-min {
         border-radius: 4px;
       }
@@ -54,5 +57,36 @@
 
 .navbar-toggle {
   float: none;
+
   margin-right: 0;
+}
+
+.panel {
+  background-color: darken($color-light, 7%);
+  &:not(:last-of-type) {
+    margin-bottom: $gap * 2;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.panel-info {
+  border: none;
+}
+
+.panel-info > .panel-heading {
+  letter-spacing: 0.08em;
+
+  color: $color-light;
+  border: none;
+  background-color: $color-accent;
+
+  font-size: 1.25rem;
+}
+
+.panel-body {
+  border: 1px solid $color-gray;
+  border-radius: 0 0 4px 4px;
 }

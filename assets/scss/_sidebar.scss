@@ -1,0 +1,11 @@
+.left-sidebar {
+  @extend %margin-bottom-lg;
+}
+.vertical-slider {
+  overflow: hidden;
+
+  border-radius: 4px;
+  &__image {
+    width: 100%;
+  }
+}
