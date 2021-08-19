@@ -70,23 +70,32 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+  &-info {
+    border: none;
+
+    > .panel-heading {
+      letter-spacing: 0.08em;
+
+      color: $color-light;
+      border: none;
+      background-color: $color-accent;
+
+      font-size: 1.25rem;
+    }
+  }
+
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
+}
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
 }
 
-.panel-info {
-  border: none;
-}
-
-.panel-info > .panel-heading {
-  letter-spacing: 0.08em;
-
-  color: $color-light;
-  border: none;
-  background-color: $color-accent;
-
-  font-size: 1.25rem;
-}
-
-.panel-body {
-  border: 1px solid $color-gray;
-  border-radius: 0 0 4px 4px;
+.thumbnail {
+  transition: background-color 0.5s;
 }
