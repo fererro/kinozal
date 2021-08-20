@@ -1,3 +1,86 @@
 .main {
   @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
+}
+
+.new-films {
+  &-row {
+    margin-left: -$gap-sm;
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+  &-item {
+    padding-left: $gap-sm;
+    padding-right: $gap-sm;
+    margin-bottom: $gap;
+    &__title {
+      @include text-shortener;
+      margin: 0;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+      &:hover {
+        background-color: $color-accent;
+        h3 {
+          color: $color-light;
+        }
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+.film-news {
+  article {
+    &:hover {
+      .thumbnail {
+        background-color: $color-accent;
+      }
+      .btn {
+        background-color: $color-accent;
+        color: $color-light;
+      }
+      a {
+        color: $color-accent;
+      }
+    }
+  }
+  &-item {
+    &__text {
+      text-align: justify;
+    }
+
+    &__button {
+      float: right;
+      margin-bottom: 30px;
+      transition: background-color 0.25s;
+      //   &:hover {
+      //     a {
+      //       color: $color-light !important;
+      //     }
+      //   }
+    }
+    &__image {
+      width: 100%;
+    }
+    .thumbnail {
+      margin-bottom: 0;
+
+      transition: background-color 0.25s;
+    }
+  }
 }
